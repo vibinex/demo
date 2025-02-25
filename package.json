@@ -1,7 +1,7 @@
 {
   "name": "react-flow-extension",
   "displayName": "React flow extension",
-  "version": "0.1.1",
+  "version": "1.0.0",
   "description": "An extension for GitHub, GitLab and Bitbucket to see the diff-graph over the files changed and easily navigate the pull request changes.",
   "author": "Avikalp Gupta <avikalp@vibinex.com>",
   "scripts": {
@@ -32,7 +32,8 @@
       "https://vibinex.com/*"
     ],
     "permissions": [
-      "sidePanel"
+      "sidePanel",
+      "activeTab"
     ],
     "background": {
       "service_worker": "background.ts"
