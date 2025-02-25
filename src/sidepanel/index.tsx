@@ -1,4 +1,7 @@
 import { useEffect, useState } from "react"
+import { ReactFlow } from '@xyflow/react';
+import '@xyflow/react/dist/style.css';
+import { edges, nodes } from "~utils/reactFlow/initial-data";
 
 interface PRInfo {
 	repo: string
@@ -82,7 +85,7 @@ function IndexSidePanel() {
 					justifyContent: "center",
 					color: "#666"
 				}}>
-				Canvas area for React Flow
+				<ReactFlow nodes={nodes} edges={edges} />
 			</div>
 		</div>
 	)
