@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import { ReactFlow } from '@xyflow/react';
 import '@xyflow/react/dist/style.css';
-import { edges, nodes } from "~utils/reactFlow/initial-data";
+import { edges, nodes } from "~utils/reactFlow/sexiest-pr-data";
 
 interface PRInfo {
 	repo: string
