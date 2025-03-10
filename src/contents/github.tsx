@@ -6,7 +6,9 @@ export const config: PlasmoCSConfig = {
 	matches: ["https://github.com/*"]
 }
 
-export const DockableWidget = () => {
+export const DockableWidget = ( props: { dummy: number, dummy2: string}) => {
+	const {dummy, dummy2} = props;
+	console.log(dummy, dummy2);
 	const [isDragging, setIsDragging] = useState(false)
 	const [position, setPosition] = useState({ y: 200 }) // Default vertical position
 	const widgetRef = useRef<HTMLDivElement>(null)
