@@ -3,7 +3,7 @@ import { DockableWidget } from "./github";
 const CustomButton = () => {
 	console.log("==> Custom Button")
 	return (
-		<DockableWidget />
+		<DockableWidget dummy={42} dummy2="Hello, World!"/>
 	)
 }
 
